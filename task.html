@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Picture Previewer</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<div class="main center">
+    <div class="header">
+        <h1>Picture Previewer</h1>
+    </div>
+    <div class="container d-flex">
+        <div class="d-flex column relative">
+            <div oncontextmenu="return false" class="scrollBar d-flex">
+            </div>
+            <div class="loading absolute">
+                <div class="loadingCircle"></div>
+                <div class="loadingCircle"></div>
+                <div class="loadingCircle"></div>
+            </div>
+        </div>
+
+        <div class="previewBox">
+            <div class="imgBox"></div>
+            <div class="rightBox d-flex">
+                <div class="filterBox d-flex column">
+                    <span class="d-flex">
+                        <input id="checkBox" type="checkbox">
+                        <span class="font20px">Grayscale</span>
+                    </span>
+                    <div class="d-flex mt-10">
+                        <span class="font20px">Blur</span>
+                        <input type="range" min="0" max="5" value="0" class="slider" id="slider">
+                    </div>
+                </div>
+                <h2 id="author">Choose</h2>
+                <h3 id="width"></h3>
+                <h3 id="height">picture</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="task.js" defer></script>
+</body>
+</html>
